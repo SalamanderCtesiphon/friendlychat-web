@@ -47,6 +47,7 @@ import { getPerformance } from 'firebase/performance';
 
 import { getFirebaseConfig } from './firebase-config.js';
 
+
 // Signs-in Friendly Chat.
 async function signIn() {
   alert('TODO: Implement Google Sign-In');
@@ -344,7 +345,7 @@ mediaCaptureElement.addEventListener('change', onMediaFileSelected);
 
 const firebaseAppConfig = getFirebaseConfig();
 // TODO 0: Initialize Firebase
-
+initializeApp(firebaseAppConfig)
 // TODO 12: Initialize Firebase Performance Monitoring
 
 initFirebaseAuth();
